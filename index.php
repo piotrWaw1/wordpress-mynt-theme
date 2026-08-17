@@ -21,14 +21,14 @@
 <section class="hero">
   <div class="hero-inner">
     <div>
-      <div class="eyebrow"><span class="pulse"></span>AGENCJA SOCIAL MEDIA</div>
+      <!-- <div class="eyebrow"><span class="pulse"></span>AGENCJA SOCIAL MEDIA</div> -->
       <h1>Twoja marka zasługuje na feed,<br>który <span class="underline">się zatrzymuje<svg viewBox="0 0 220 14" preserveAspectRatio="none"><path d="M2 10 C 40 2, 80 2, 110 8 S 180 14, 218 6" stroke="#5FE9BC" stroke-width="4" fill="none" stroke-linecap="round"/></svg></span>.</h1>
       <p class="lead">Budujemy strategie, treści i kampanie, dzięki którym marki przestają scrollować w cieniu konkurencji — i zaczynają prowadzić rozmowę ze swoją społecznością.</p>
       <div class="hero-ctas">
         <a href="#kontakt" class="btn btn-mint">Umów bezpłatną konsultację</a>
         <a href="#efekty" class="btn btn-ghost">Zobacz efekty →</a>
       </div>
-      <div class="trust-row">
+      <!-- <div class="trust-row">
         <div class="avatars">
           <span style="background:#7C4DFF;">A</span>
           <span style="background:#1F9E77;">K</span>
@@ -36,7 +36,7 @@
           <span style="background:#9366FF;">P</span>
         </div>
         <div class="txt"><strong>40+ marek</strong> zaufało nam w ciągu ostatnich 6 lat</div>
-      </div>
+      </div> -->
     </div>
 
     <div class="hero-visual">
@@ -76,12 +76,12 @@
   </div>
 </section>
 
-<div class="marquee-strip">
+<!-- <div class="marquee-strip">
   <div class="marquee-track" id="marquee">
     <span><span class="mint">#STRATEGIA</span> · <span class="white">TWORZENIE TREŚCI</span> · <span class="mint">#SPOŁECZNOŚĆ</span> · <span class="white">KAMPANIE PŁATNE</span> · <span class="mint">#REELS</span> · <span class="white">WSPÓŁPRACE Z TWÓRCAMI</span> · <span class="mint">#ANALITYKA</span> · </span>
     <span><span class="mint">#STRATEGIA</span> · <span class="white">TWORZENIE TREŚCI</span> · <span class="mint">#SPOŁECZNOŚĆ</span> · <span class="white">KAMPANIE PŁATNE</span> · <span class="mint">#REELS</span> · <span class="white">WSPÓŁPRACE Z TWÓRCAMI</span> · <span class="mint">#ANALITYKA</span> · </span>
   </div>
-</div>
+</div> -->
 
 <section id="uslugi">
   <div class="wrap">
@@ -137,7 +137,7 @@
   </div>
 </section>
 
-<section class="alt-bg" id="proces">
+<section id="proces">
   <div class="wrap">
     <div class="section-head reveal">
       <div class="eyebrow-line">JAK PRACUJEMY</div>
@@ -175,7 +175,7 @@
   </div>
 </section>
 
-<section class="results" id="efekty">
+<!-- <section class="results" id="efekty">
   <div class="wrap">
     <div class="section-head reveal" style="max-width:560px;">
       <div class="eyebrow-line">LICZBY</div>
@@ -189,7 +189,7 @@
       <div class="result"><span class="num" data-target="6" data-suffix=" lat">0</span><span class="lbl">doświadczenia agencji</span></div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section id="opinie">
   <div class="wrap">
@@ -200,7 +200,7 @@
         <div class="author">
           <div class="av"></div>
           <div>
-            <div class="name">Aleksandra Wiśniewska</div>
+            <div class="name">Milena Leszko</div>
             <div class="role">Head of Marketing, Studio Nordic</div>
           </div>
         </div>
@@ -239,121 +239,5 @@
     </div>
   </div>
 </section>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="#" class="logo">MYNT<span class="dot">.</span></a>
-        <p>Agencja social media dla marek, które chcą prowadzić rozmowę, a nie tylko publikować.</p>
-      </div>
-      <div class="footer-cols">
-        <div class="footer-col">
-          <h4>NAWIGACJA</h4>
-          <ul>
-            <li><a href="#uslugi">Usługi</a></li>
-            <li><a href="#proces">Proces</a></li>
-            <li><a href="#efekty">Efekty</a></li>
-            <li><a href="#opinie">Opinie</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>KONTAKT</h4>
-          <ul>
-            <li><a href="mailto:hello@mynt-social.pl">hello@mynt-social.pl</a></li>
-            <li><a href="tel:+48000000000">+48 000 000 000</a></li>
-            <li><a href="#">Warszawa, Polska</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 MYNT. Wszystkie prawa zastrzeżone.</span>
-      <div class="socials">
-        <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
-        <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 13v4"/></svg></a>
-        <a href="#" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 3v10.5a3.5 3.5 0 1 1-3-3.46"/><path d="M15 6.5a4 4 0 0 0 4 4"/></svg></a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script>
-  // scroll progress bar
-  const progressBar = document.getElementById('scrollProgress');
-  const headerEl = document.getElementById('siteHeader');
-  window.addEventListener('scroll', ()=>{
-    const h = document.documentElement;
-    const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
-    progressBar.style.width = scrolled + '%';
-    headerEl.classList.toggle('scrolled', h.scrollTop > 30);
-  },{passive:true});
-
-  // scroll reveal
-  const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
-  const io = new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{
-      if(e.isIntersecting){
-        e.target.classList.add('in');
-        io.unobserve(e.target);
-      }
-    });
-  },{threshold:0.15});
-  revealEls.forEach(el=>io.observe(el));
-
-  // process progress line trigger
-  const processSteps = document.getElementById('processSteps');
-  const procIO = new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{
-      if(e.isIntersecting){
-        setTimeout(()=>e.target.classList.add('in'), 200);
-        procIO.unobserve(e.target);
-      }
-    });
-  },{threshold:0.4});
-  procIO.observe(processSteps);
-
-  // count up numbers
-  const nums = document.querySelectorAll('.result .num');
-  const countIO = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-      if(entry.isIntersecting){
-        const el = entry.target;
-        const target = parseFloat(el.dataset.target);
-        const suffix = el.dataset.suffix || '';
-        const decimal = parseInt(el.dataset.decimal || '0');
-        let start = null;
-        const duration = 1400;
-        function step(ts){
-          if(!start) start = ts;
-          const progress = Math.min((ts-start)/duration,1);
-          const eased = 1 - Math.pow(1-progress,3);
-          const val = target*eased;
-          el.textContent = (decimal ? val.toFixed(decimal) : Math.round(val)) + suffix;
-          if(progress < 1) requestAnimationFrame(step);
-        }
-        requestAnimationFrame(step);
-        countIO.unobserve(el);
-      }
-    });
-  },{threshold:0.5});
-  nums.forEach(el=>countIO.observe(el));
-
-  // subtle parallax on hero visual based on pointer position
-  const heroVisual = document.querySelector('.hero-visual');
-  if(heroVisual && window.matchMedia('(hover:hover)').matches){
-    document.querySelector('.hero').addEventListener('mousemove', (e)=>{
-      const rect = heroVisual.getBoundingClientRect();
-      const relX = (e.clientX - rect.left - rect.width/2) / rect.width;
-      const relY = (e.clientY - rect.top - rect.height/2) / rect.height;
-      heroVisual.querySelectorAll('.post-card').forEach((card,i)=>{
-        const depth = (i+1)*6;
-        card.style.transform += '';
-        card.style.setProperty('--px', (relX*depth) + 'px');
-        card.style.setProperty('--py', (relY*depth) + 'px');
-      });
-    });
-  }
-</script>
 
 <?php get_footer(); ?>
