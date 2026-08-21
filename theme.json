@@ -1,0 +1,56 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "background": {
+      "backgroundImage": true
+    },
+    "custom": {
+      "bg": {
+        "950": "#0E0619",
+        "900": "#150A28",
+        "850": "#1A0F32",
+        "800": "#211440"
+      },
+      "card": "#1D1236",
+      "cardHover": "#251A47",
+      "purple": {
+        "600": "#7C4DFF",
+        "500": "#9366FF"
+      },
+      "violet400": "#B18CFF",
+      "mint": {
+        "400": "#5FE9BC",
+        "300": "#93F5D6",
+        "glow": "rgba(95,233,188,0.35)"
+      },
+      "white": "#FFFFFF",
+      "text": {
+        "primary": "#F4F1FB",
+        "muted": "#A79BC9",
+        "dim": "#7B6E9E"
+      },
+      "line": "rgba(255,255,255,0.09)",
+      "lineStrong": "rgba(255,255,255,0.16)",
+      "radius": {
+        "lg": "28px",
+        "md": "18px",
+        "sm": "10px"
+      }
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#0E0619",
+      "text": "#FFFFFF"
+    },
+    "background": {
+      "backgroundImage": {
+        "url": "file:./assets/img/mynt-background.svg"
+      },
+      "backgroundSize": "cover",
+      "backgroundRepeat": "no-repeat",
+      "backgroundPosition": "center"
+    }
+  }
+}
