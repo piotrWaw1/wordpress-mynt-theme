@@ -29,18 +29,20 @@ revealEls.forEach((el) => io.observe(el));
 
 // process progress line trigger
 const processSteps = document.getElementById("processSteps");
-const procIO = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((e) => {
-      if (e.isIntersecting) {
-        setTimeout(() => e.target.classList.add("in"), 200);
-        procIO.unobserve(e.target);
-      }
-    });
-  },
-  { threshold: 0.4 },
-);
-procIO.observe(processSteps);
+if (processSteps) {
+  const procIO = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add("in"), 200);
+          procIO.unobserve(e.target);
+        }
+      });
+    },
+    { threshold: 0.4 },
+  );
+  procIO.observe(processSteps);
+}
 
 // count up numbers
 const nums = document.querySelectorAll(".result .num");

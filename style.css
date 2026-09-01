@@ -670,6 +670,11 @@ section {
   max-width: 640px;
   margin-bottom: 64px;
 }
+
+.eyebrow-line {
+  text-transform: uppercase;
+}
+
 .section-head .eyebrow-line {
   display: flex;
   align-items: center;
