@@ -18,7 +18,7 @@ $description = esc_html(get_field('description'));
             $image  = get_sub_field('image');
             $title = get_sub_field('title');
             $desc  = get_sub_field('description');
-            ?>
+        ?>
             <div class="service-card">
                 <div class="service-icon">
                     <?php if ( $image ) : ?>
