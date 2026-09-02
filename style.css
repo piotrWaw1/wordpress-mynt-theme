@@ -27,6 +27,9 @@ Version: 1.0
   --radius-sm: 10px;
   --max-width: 1350px;
   --navbar-width: 1500px;
+  --text-sm: 14px;
+  --text-lg: 18px;
+  --text-xl: 20px;
 }
 
 * {
@@ -229,7 +232,7 @@ header.scrolled nav {
 .nav-links {
   display: flex;
   gap: 36px;
-  font-size: 15px;
+  font-size: var(--text-lg);
   font-weight: 500;
 }
 .nav-links a {
@@ -865,13 +868,13 @@ section {
   box-shadow: 0 0 18px var(--mint-glow);
 }
 .step h3 {
-  font-size: 16.5px;
+  font-size: var(--text-lg);
   margin-bottom: 8px;
   font-weight: 600;
   color: var(--white);
 }
 .step p {
-  font-size: 13.5px;
+  font-size: 15px;
   color: var(--text-muted);
   line-height: 1.55;
 }
@@ -905,7 +908,7 @@ section {
   text-shadow: 0 0 30px var(--mint-glow);
 }
 .result .lbl {
-  font-size: 14px;
+  font-size: var(--text-sm);
   color: var(--text-muted);
 }
 

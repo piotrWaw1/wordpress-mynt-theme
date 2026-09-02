@@ -20,7 +20,7 @@
       <div class="footer-cols">
         <div class="footer-col">
           <h4>NAWIGACJA</h4>
-          <ul>
+          <!-- <ul>
           <?php if (have_rows('page_nav')) : ?>
             <?php while ( have_rows('page_nav') ) : the_row();
                     $page = get_sub_field('page');
@@ -29,13 +29,13 @@
                 <li><a href="<?php echo esc_url($page);?>"><?php echo ($page_label);?></a></li>
             <?php endwhile; ?>
           <?php endif; ?>
-        </ul>
-          <!-- <ul>
+        </ul> -->
+          <ul>
             <li></li>
+            <li><a href="#uslugi">Usługi</a></li>
             <li><a href="#proces">Proces</a></li>
-            <li><a href="#efekty">Efekty</a></li>
-            <li><a href="#opinie">Opinie</a></li>
-          </ul> -->
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
         </div>
         <div class="footer-col">
           <h4>KONTAKT</h4>

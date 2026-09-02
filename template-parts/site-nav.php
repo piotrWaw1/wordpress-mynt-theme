@@ -8,13 +8,12 @@ $logo = esc_html(get_field('logo'));
 
 <header id="siteHeader">
   <nav>
-    <!-- <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo">MYNT<span class="dot">.</span></a> -->
-     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" ><img src="<?php echo esc_url( $logo ); ?>" alt="logo" class="logo"></a>
+    <!-- <?php echo esc_url( home_url( '/' ) ); ?> -->
+    <a href="#" ><img src="<?php echo esc_url( $logo ); ?>" alt="logo" class="logo"></a>
     <div class="nav-links">
-      <a href="/uslugi">Usługi</a>
+      <a href="#uslugi">Usługi</a>
       <a href="#proces">Proces</a>
-      <a href="#efekty">Efekty</a>
-      <a href="#opinie">Opinie</a>
+      <a href="#kontakt">Kontakt</a>
     </div>
     <div class="nav-cta">
       <a href="#kontakt" class="btn btn-primary">Umów rozmowę</a>
