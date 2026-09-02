@@ -13,7 +13,7 @@ $card3_title = esc_html(get_field('card3_title'));
 ?>
 
 <section class="hero">
-  <div class="hero-inner">
+  <div class="hero-inner wrap">
     <div>
       <h1><?php echo($hero_title); ?></h1>
       <p class="lead"><?php echo($hero_description); ?></p>
