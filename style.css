@@ -25,6 +25,8 @@ Version: 1.0
   --radius-lg: 28px;
   --radius-md: 18px;
   --radius-sm: 10px;
+  --max-width: 1350px;
+  --navbar-width: 1500px;
 }
 
 * {
@@ -71,7 +73,7 @@ h3,
 }
 
 .wrap {
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 32px;
 }
@@ -206,7 +208,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 20px 32px;
-  max-width: 1200px;
+  max-width: var(--navbar-width);
   margin: 0 auto;
   transition: padding 0.3s ease;
 }
@@ -214,14 +216,13 @@ header.scrolled nav {
   padding: 13px 32px;
 }
 .logo {
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  display: flex;
-  align-items: center;
-  gap: 2px;
-  color: var(--white);
+  width: 250px;
 }
+
+.logo-footer {
+  width: 200px;
+}
+
 .logo .dot {
   color: var(--mint-400);
 }
@@ -309,12 +310,8 @@ header.scrolled nav {
 }
 
 /* ---------- HERO ---------- */
-.hero {
-  position: relative;
-  padding: 110px 32px 70px;
-}
 .hero-inner {
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
@@ -803,11 +800,16 @@ section {
 }
 
 /* ---------- PROCESS ---------- */
+.process-steps-wrapper {
+  display: flex;
+  justify-content: center;
+}
 .process-steps {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 0;
-  position: relative;
+  grid-template-columns: repeat(var(--steps-count, 5), minmax(140px, 220px));
+  gap: 16px;
+
+  margin: auto;
 }
 .process-steps::before {
   content: "";
@@ -833,7 +835,6 @@ section {
 }
 .step {
   position: relative;
-  padding-right: 16px;
 }
 .step .num {
   font-family: "JetBrains Mono", monospace;
