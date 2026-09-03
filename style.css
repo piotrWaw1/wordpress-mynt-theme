@@ -54,11 +54,11 @@ a {
 ul {
   list-style: none;
 }
-img,
+/* img,
 svg {
   display: block;
   max-width: 100%;
-}
+} */
 
 h1,
 h2,
@@ -1092,32 +1092,66 @@ section {
 footer {
   padding: 70px 0 36px;
 }
+.footer-logo {
+  width: 200px;
+}
 .footer-top {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   border-bottom: 1px solid var(--line);
   margin-bottom: 30px;
   gap: 40px;
 }
-.footer-brand p {
-  color: var(--text-muted);
-  font-size: 14.5px;
-  max-width: 280px;
-  margin-top: 14px;
-  line-height: 1.6;
-}
-.footer-cols {
+.footer-brand {
   display: flex;
-  gap: 70px;
+  flex-direction: row;
+  gap: 64px;
+  width: 100%;
+  margin-bottom: 32px;
 }
-.footer-col h4 {
+.footer-section-name {
+  display: block;
   font-family: "JetBrains Mono", monospace;
-  font-size: 12px;
-  color: var(--text-dim);
-  margin-bottom: 16px;
+  font-weight: 900;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 20px;
   letter-spacing: 0.08em;
+}
+.footer-contact-data {
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 600;
+  font-family: "JetBrains Mono", sans-serif;
+  color: #fff;
+  line-height: 1.25;
+  transition: color 0.2s ease;
+}
+.footer-contact-data:hover {
+  color: var(--mint-300);
+}
+.footer-contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.footer-btn {
+  margin-top: 20px;
+}
+.footer-brand hr {
+  width: 100%;
+  height: 1px;
+  align-self: center;
+  border-color: var(--line);
+}
+
+.footer-cols {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
 }
 .footer-col ul li {
   margin-bottom: 10px;
@@ -1132,12 +1166,13 @@ footer {
 }
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-size: 13px;
   color: var(--text-dim);
 }
 .socials {
+  margin-top: 32px;
   display: flex;
   gap: 14px;
 }
@@ -1218,9 +1253,9 @@ footer {
   .results-grid {
     grid-template-columns: 1fr;
   }
-  .footer-top {
+  /* .footer-top {
     flex-direction: column;
-  }
+  } */
   .footer-cols {
     gap: 40px;
   }
@@ -1247,12 +1282,6 @@ footer {
     justify-content: center;
     gap: 70px;
     width: 100%;
-  }
-  .footer-brand {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   .orbit-ring {
     display: none;
