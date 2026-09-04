@@ -27,3 +27,5 @@ function mynt_setup() {
     ) );
 }
 add_action( 'after_setup_theme', 'mynt_setup' );
+
+require_once get_template_directory() . '/inc/acf-fields.php';

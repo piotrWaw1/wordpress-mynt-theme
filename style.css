@@ -1033,7 +1033,7 @@ section {
   margin-bottom: 16px;
   position: relative;
 }
-.cta-section p {
+.cta-description {
   color: var(--text-muted);
   font-size: 16px;
   line-height: 1.6;
@@ -1051,12 +1051,15 @@ section {
 .cta-form .field {
   margin-bottom: 14px;
 }
+.cta-form p {
+  width: 100%;
+}
 .cta-form label {
-  display: block;
+  display: inline-block;
   font-size: 12.5px;
   font-family: "JetBrains Mono", monospace;
   color: var(--text-dim);
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 .cta-form input,
 .cta-form textarea {
@@ -1071,6 +1074,14 @@ section {
   transition:
     border-color 0.2s ease,
     background 0.2s ease;
+}
+.cta-form textarea {
+  height: 100px;
+}
+.cta-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .cta-form input:focus,
 .cta-form textarea:focus {
@@ -1288,11 +1299,11 @@ footer {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
-}
+} */

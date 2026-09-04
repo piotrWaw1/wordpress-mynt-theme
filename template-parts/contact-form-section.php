@@ -8,23 +8,11 @@ $description = esc_html(get_field('contact_form_description'));
     <div class="cta-section reveal">
       <div>
         <h2><?php echo($title); ?></h2>
-        <p><?php echo($description); ?></p>
+        <p class="cta-description"><?php echo($description); ?></p>
       </div>
-      <form class="cta-form" onsubmit="return false;">
-        <div class="field">
-          <label for="name">IMIĘ I NAZWISKO</label>
-          <input id="name" type="text" placeholder="Jan Kowalski">
-        </div>
-        <div class="field">
-          <label for="email">E-MAIL</label>
-          <input id="email" type="email" placeholder="jan@firma.pl">
-        </div>
-        <div class="field">
-          <label for="msg">O CZYM CHCESZ POROZMAWIAĆ?</label>
-          <textarea id="msg" rows="3" placeholder="Krótko o marce i celu..."></textarea>
-        </div>
-        <button type="submit" class="btn btn-mint">Wyślij zgłoszenie</button>
-      </form>
+      <div class="cta-form">
+        <?php echo do_shortcode('[contact-form-7 id="246b69b" title="Kontakt"]'); ?>
+      </div>
     </div>
   </div>
 </section>
