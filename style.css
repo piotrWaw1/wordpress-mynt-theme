@@ -27,6 +27,7 @@ Version: 1.0
   --radius-sm: 10px;
   --max-width: 1350px;
   --navbar-width: 1500px;
+  --text-paragraph: 16.5px;
   --text-sm: 14px;
   --text-lg: 18px;
   --text-xl: 20px;
@@ -235,6 +236,7 @@ header.scrolled nav {
   font-weight: 500;
 }
 .nav-links a {
+  font-weight: 900;
   position: relative;
   padding: 4px 0;
   color: var(--text-muted);
@@ -265,7 +267,7 @@ header.scrolled nav {
   padding: 12px 22px;
   border-radius: 999px;
   font-weight: 600;
-  font-size: 14.5px;
+  font-size: 16px;
   cursor: pointer;
   border: none;
   transition:
@@ -507,7 +509,7 @@ header.scrolled nav {
   background: var(--purple-600);
 }
 .post-card .handle {
-  font-size: 11.5px;
+  font-size: 14.5px;
   font-weight: 600;
   color: var(--text-primary);
 }
@@ -679,7 +681,7 @@ section {
   align-items: center;
   gap: 10px;
   font-family: "JetBrains Mono", monospace;
-  font-size: 12.5px;
+  font-size: 14.5px;
   font-weight: 600;
   color: var(--mint-300);
   margin-bottom: 18px;
@@ -696,7 +698,7 @@ section {
   margin-bottom: 16px;
 }
 .section-head p {
-  font-size: 16.5px;
+  font-size: var(--text-paragraph);
   color: var(--text-muted);
   line-height: 1.6;
 }
@@ -790,13 +792,13 @@ section {
   transform: rotate(-6deg) scale(1.06);
 }
 .service-card h3 {
-  font-size: 19px;
+  font-size: var(--text-xl);
   margin-bottom: 10px;
   font-weight: 600;
   color: var(--white);
 }
 .service-card p {
-  font-size: 14.5px;
+  font-size: var(--text-paragraph);
   color: var(--text-muted);
   line-height: 1.6;
 }
@@ -840,7 +842,8 @@ section {
 }
 .step .num {
   font-family: "JetBrains Mono", monospace;
-  font-size: 13px;
+  font-size: 20px;
+  font-weight: 900;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -867,13 +870,13 @@ section {
   box-shadow: 0 0 18px var(--mint-glow);
 }
 .step h3 {
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
   margin-bottom: 8px;
   font-weight: 600;
   color: var(--white);
 }
 .step p {
-  font-size: 15px;
+  font-size: var(--text-paragraph);
   color: var(--text-muted);
   line-height: 1.55;
 }
@@ -1035,7 +1038,7 @@ section {
 }
 .cta-description {
   color: var(--text-muted);
-  font-size: 16px;
+  font-size: var(--text-paragraph);
   line-height: 1.6;
   margin-bottom: 0;
   position: relative;
@@ -1056,7 +1059,7 @@ section {
 }
 .cta-form label {
   display: inline-block;
-  font-size: 12.5px;
+  font-size: 14.5px;
   /* font-family: "JetBrains Mono", monospace; */
   color: var(--text-dim);
   margin-bottom: 8px;

@@ -69,6 +69,7 @@ function mytheme_customize_register( $wp_customize ) {
         'priority' => 30,
     ] );
 
+    // --- Body font ---
     $wp_customize->add_setting( 'mytheme_body_font', [
         'default'           => 'Inter',
         'sanitize_callback' => 'sanitize_text_field',
@@ -81,7 +82,7 @@ function mytheme_customize_register( $wp_customize ) {
         'type'        => 'text',
     ] );
 
-    // --- Heading font (new) ---
+    // --- Heading font ---
     $wp_customize->add_setting( 'mytheme_heading_font', [
         'default'           => 'Space Grotesk',
         'sanitize_callback' => 'sanitize_text_field',
