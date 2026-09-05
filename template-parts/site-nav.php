@@ -1,5 +1,5 @@
 <?php
-$logo = esc_html(get_field('logo'));
+$logo = get_field('logo');
 ?>
 
 <div class="scroll-progress" id="scrollProgress"></div>
