@@ -27,3 +27,11 @@ function mynt_setup() {
     ) );
 }
 add_action( 'after_setup_theme', 'mynt_setup' );
+
+function my_theme_cf7_shortcode_by_title( $title ) {
+    $form = get_page_by_title( $title, OBJECT, 'wpcf7_contact_form' );
+    if ( ! $form ) {
+        return '';
+    }
+    return do_shortcode( '[contact-form-7 id="' . $form->ID . '" title="' . esc_attr( $title ) . '"]' );
+}

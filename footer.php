@@ -41,7 +41,11 @@
         </div>
       </div>
       <div class="socials">
-        <a href="<?php echo ($instagram['instagram_url']['url']);?>" aria-label="<?php echo ($instagram['instagram_url']['title']);?>"><?php echo ($instagram['icon']);?></a>
+        <?php if ( ! empty( $instagram['instagram_url'] ) && is_array( $instagram['instagram_url'] ) ) : ?>
+            <a href="<?php echo esc_url( $instagram['instagram_url']['url'] ); ?>" aria-label="<?php echo esc_attr( $instagram['instagram_url']['title'] ); ?>">
+                <?php echo $instagram['icon']; ?>
+            </a>
+        <?php endif; ?>
       </div>
     </div>
     <div class="footer-bottom">

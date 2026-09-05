@@ -11,7 +11,8 @@ $description = esc_html(get_field('contact_form_description'));
         <p class="cta-description"><?php echo($description); ?></p>
       </div>
       <div class="cta-form">
-        <?php echo do_shortcode('[contact-form-7 id="246b69b" title="Kontakt"]'); ?>
+        <!-- <?php //echo do_shortcode('[contact-form-7 id="246b69b" title="Kontakt"]'); ?> -->
+         <?php echo my_theme_cf7_shortcode_by_title( 'Kontakt' ); ?>
       </div>
     </div>
   </div>

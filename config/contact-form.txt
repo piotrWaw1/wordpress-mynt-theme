@@ -1,0 +1,10 @@
+<label for="your-name">IMIĘ I NAZWISKO</label>
+[text* your-name id:your-name placeholder "Jan Kowalski"]
+
+<label for="your-email">E-MAIL</label>
+[email* your-email id:your-email autocomplete:email placeholder "jan@firma.pl"]
+
+<label for="your-message">O CZYM CHCESZ POROZMAWIAĆ?</label>
+[textarea* your-message id:your-message placeholder "Krótko o marce i celu..."]
+
+<button class="btn btn-mint" type="submit">Wyślij zgłoszenie</button>
