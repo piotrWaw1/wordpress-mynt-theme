@@ -1057,7 +1057,7 @@ section {
 .cta-form label {
   display: inline-block;
   font-size: 12.5px;
-  font-family: "JetBrains Mono", monospace;
+  /* font-family: "JetBrains Mono", monospace; */
   color: var(--text-dim);
   margin-bottom: 8px;
 }
@@ -1125,7 +1125,7 @@ footer {
 }
 .footer-section-name {
   display: block;
-  font-family: "JetBrains Mono", monospace;
+  /* font-family: "JetBrains Mono", monospace; */
   font-weight: 900;
   color: var(--text-muted);
   text-transform: uppercase;
@@ -1135,7 +1135,7 @@ footer {
 .footer-contact-data {
   font-size: clamp(24px, 3vw, 32px);
   font-weight: 600;
-  font-family: "JetBrains Mono", sans-serif;
+  /* font-family: "JetBrains Mono", sans-serif; */
   color: #fff;
   line-height: 1.25;
   transition: color 0.2s ease;
