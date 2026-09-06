@@ -50,7 +50,7 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 by kreuj.się.</span>
-      <span>Wszystkie prawa zastrzeżone | <a class="footer-private-policy" href="<?php echo get_privacy_policy_url(); ?>">Polityka prywatności</a></span>
+      <span>Wszystkie prawa zastrzeżone | <a class="footer-legal-link" href="<?php echo get_privacy_policy_url(); ?>">Polityka prywatności</a></span>
     </div>
   </div>
 </footer>

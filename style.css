@@ -1255,7 +1255,7 @@ footer {
   font-size: 13px;
   color: var(--text-dim);
 }
-.footer-private-policy:hover {
+.footer-legal-link:hover {
   color: var(--mint-400);
 }
 .socials {
