@@ -19,7 +19,6 @@ $card3_title = get_field('card3_title');
       <p class="lead"><?php echo($hero_description); ?></p>
       <div class="hero-ctas">
         <a href="#kontakt" class="btn btn-mint">Umów bezpłatną konsultację</a>
-        <!-- <a href="#efekty" class="btn btn-ghost">Zobacz efekty →</a> -->
       </div>
     </div>
 

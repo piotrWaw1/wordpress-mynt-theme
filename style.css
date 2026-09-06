@@ -33,7 +33,7 @@ Version: 1.0
   --text-xl: 20px;
 }
 
-* {
+*:not(ul) {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -52,8 +52,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
-ul {
+footer ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 h1,
 h2,
@@ -1245,15 +1248,39 @@ footer {
 }
 .footer-bottom {
   display: flex;
+  flex-direction: row;
+  gap: 5px;
   justify-content: center;
   align-items: center;
   font-size: 13px;
   color: var(--text-dim);
 }
+.footer-private-policy:hover {
+  color: var(--mint-400);
+}
 .socials {
   margin-top: 32px;
   display: flex;
   gap: 14px;
+}
+
+.policy-content {
+  margin-top: 32px;
+  margin-left: 25px;
+}
+.policy-content ol li {
+  list-style-position: inside;
+}
+.policy-header {
+  color: #fff;
+  font-size: clamp(28px, 3.4vw, 42px);
+  margin-bottom: 16px;
+}
+.policy-section {
+  padding: 80px 0;
+}
+.policy-main-point-space {
+  margin-bottom: 20px;
 }
 
 /* ---------- RESPONSIVE ---------- */
@@ -1356,6 +1383,10 @@ footer {
   }
   .footer-logo {
     width: 180px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 5px;
   }
 }
 

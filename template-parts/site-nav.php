@@ -1,6 +1,10 @@
 <?php
 $logo = get_field('logo');
 $instagram = get_field('instagram');
+
+$nav1 = get_field('nav1');
+$nav2 = get_field('nav2');
+$nav3 = get_field('nav3');
 ?>
 
 <div class="scroll-progress" id="scrollProgress"></div>
@@ -9,12 +13,11 @@ $instagram = get_field('instagram');
 
 <header id="siteHeader">
   <nav>
-    <!-- <?php echo esc_url( home_url( '/' ) ); ?> -->
-    <a href="#" ><img src="<?php echo esc_url( $logo ); ?>" alt="logo" class="logo"></a>
+    <a href="/#" ><img src="<?php echo esc_url( $logo ); ?>" alt="logo" class="logo"></a>
     <div class="nav-links">
-      <a href="#uslugi">Usługi</a>
-      <a href="#proces">Proces</a>
-      <a href="#kontakt">Kontakt</a>
+      <a href="/#uslugi"><?php echo $nav1?></a>
+      <a href="/#proces"><?php echo $nav2?></a>
+      <a href="/#kontakt"><?php echo $nav3?></a>
     </div>
     <div class="nav-cta">
       <?php if ( ! empty( $instagram['instagram_url'] ) && is_array( $instagram['instagram_url'] ) ) : ?>
@@ -24,7 +27,7 @@ $instagram = get_field('instagram');
             </a>
           </div>
       <?php endif; ?>
-      <a href="#kontakt" class="btn btn-primary">Umów rozmowę</a>
+      <a href="/#kontakt" class="btn btn-primary">Umów rozmowę</a>
     </div>
     <button class="hamburger" id="hamburgerBtn" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobileMenu">
       <span></span><span></span><span></span>
@@ -32,9 +35,9 @@ $instagram = get_field('instagram');
   </nav>
   <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-links">
-      <a href="#uslugi">Usługi</a>
-      <a href="#proces">Proces</a>
-      <a href="#kontakt">Kontakt</a>
+      <a href="/#uslugi">Usługi</a>
+      <a href="/#proces">Proces</a>
+      <a href="/#kontakt">Kontakt</a>
     </div>
       <?php if ( ! empty( $instagram['instagram_url'] ) && is_array( $instagram['instagram_url'] ) ) : ?>
         <div class="mobile-menu-social" aria-label="Media społecznościowe">  
@@ -43,6 +46,6 @@ $instagram = get_field('instagram');
           </a>
         </div>
       <?php endif; ?>
-    <a href="#kontakt" class="btn btn-primary mobile-menu-cta">Umów rozmowę</a>
+    <a href="/#kontakt" class="btn btn-primary mobile-menu-cta">Umów rozmowę</a>
   </div>
 </header>

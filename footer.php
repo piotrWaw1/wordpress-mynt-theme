@@ -1,18 +1,22 @@
 <?php
   $logo = esc_url(get_field('logo'));
-  
+
   $email = get_field('e-mail');
   $phone_number = get_field('phone_number');
   $adress = get_field('adress');
 
   $instagram = get_field('instagram');
+
+  $nav1 = get_field('nav1');
+  $nav2 = get_field('nav2');
+  $nav3 = get_field('nav3');
 ?>
 
   <footer>
   <div class="wrap">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" ><img class="footer-logo" src="<?php echo esc_url( $logo ); ?>" alt="logo" class="logo-footer"></a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>#" ><img class="footer-logo" src="<?php echo esc_url( $logo ); ?>" alt="logo" class="logo-footer"></a>
         <hr>
       </div>
       
@@ -30,9 +34,9 @@
         <div class="footer-col">
           <span class="footer-section-name">NAWIGACJA</span>
           <ul>
-            <li><a href="#uslugi">Usługi</a></li>
-            <li><a href="#proces">Proces</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="/#uslugi"><?php echo $nav1?></a></li>
+            <li><a href="/#proces"><?php echo $nav2?></a></li>
+            <li><a href="/#kontakt"><?php echo $nav3?></a></li>
           </ul>
         </div>
       </div>
@@ -45,7 +49,8 @@
         <?php endif; ?>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 MYNT. Wszystkie prawa zastrzeżone.</span>
+      <span>© 2026 by kreuj.się.</span>
+      <span>Wszystkie prawa zastrzeżone | <a class="footer-private-policy" href="<?php echo get_permalink( get_page_by_path( 'polityka-prywatnosci' ) ); ?>">Polityka prywatności</a></span>
     </div>
   </div>
 </footer>

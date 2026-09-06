@@ -420,54 +420,6 @@
         "ai_description": ""
     },
     {
-        "key": "group_6a9813115114b",
-        "title": "Footer",
-        "fields": [
-            {
-                "key": "field_6a981311a8e87",
-                "label": "Footer description",
-                "name": "footer_description",
-                "aria-label": "",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "Agencja social media dla marek, które chcą prowadzić rozmowę, a nie tylko publikować.",
-                "maxlength": "",
-                "allow_in_bindings": 0,
-                "placeholder": "",
-                "prepend": "",
-                "append": ""
-            }
-        ],
-        "location": [
-            [
-                {
-                    "param": "post_type",
-                    "operator": "==",
-                    "value": "page"
-                }
-            ]
-        ],
-        "menu_order": 0,
-        "position": "normal",
-        "style": "default",
-        "label_placement": "top",
-        "instruction_placement": "label",
-        "hide_on_screen": "",
-        "active": true,
-        "description": "",
-        "show_in_rest": 0,
-        "display_title": "",
-        "allow_ai_access": false,
-        "ai_description": ""
-    },
-    {
         "key": "group_6a96b473e4053",
         "title": "Hero section",
         "fields": [
@@ -836,15 +788,15 @@
         "ai_description": ""
     },
     {
-        "key": "group_6a981355e97a0",
+        "key": "group_6a9db6f9a560a",
         "title": "Navigation",
         "fields": [
             {
-                "key": "field_6a98135635aa2",
-                "label": "Page nav",
-                "name": "page_nav",
+                "key": "field_6a9db6faade35",
+                "label": "Nav1",
+                "name": "nav1",
                 "aria-label": "",
-                "type": "repeater",
+                "type": "text",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -853,64 +805,54 @@
                     "class": "",
                     "id": ""
                 },
-                "layout": "table",
-                "pagination": 0,
-                "min": 0,
-                "max": 0,
-                "collapsed": "",
-                "button_label": "Add Row",
-                "rows_per_page": 20,
-                "sub_fields": [
-                    {
-                        "key": "field_6a9816a693a27",
-                        "label": "Page label",
-                        "name": "page_label",
-                        "aria-label": "",
-                        "type": "text",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "default_value": "",
-                        "maxlength": "",
-                        "allow_in_bindings": 0,
-                        "placeholder": "",
-                        "prepend": "",
-                        "append": "",
-                        "parent_repeater": "field_6a98135635aa2"
-                    },
-                    {
-                        "key": "field_6a98137935aa3",
-                        "label": "Page",
-                        "name": "page",
-                        "aria-label": "",
-                        "type": "page_link",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "post_type": [
-                            "page"
-                        ],
-                        "post_status": [
-                            "publish"
-                        ],
-                        "taxonomy": "",
-                        "allow_archives": 1,
-                        "multiple": 0,
-                        "allow_null": 0,
-                        "allow_in_bindings": 0,
-                        "parent_repeater": "field_6a98135635aa2"
-                    }
-                ]
+                "default_value": "Usługi",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6a9db71cade36",
+                "label": "Nav2",
+                "name": "nav2",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Proces",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6a9db72bade37",
+                "label": "Nav3",
+                "name": "nav3",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Kontakt",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
             }
         ],
         "location": [
