@@ -7,4 +7,6 @@
 <label for="your-message">O CZYM CHCESZ POROZMAWIAĆ?</label>
 [textarea* your-message id:your-message placeholder "Krótko o marce i celu..."]
 
+[checkbox* checkbox-930 use_label_element "Wyrazam zgodena przetwarzanle molch danych osobowych podanych w formularzu w celu odpowiedzi na przesłane zapytanie zgodnie z polityką prywatnoścí,"]
+
 <button class="btn btn-mint" type="submit">Wyślij zgłoszenie</button>

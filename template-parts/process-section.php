@@ -1,7 +1,7 @@
 <?php
-$sub_title = esc_html(get_field('sub_title_process'));
-$title = esc_html(get_field('title_process'));
-$description = esc_html(get_field('description_process'));
+$sub_title = get_field('sub_title_process');
+$title = get_field('title_process');
+$description = get_field('description_process');
 
 $rows = get_field('process_steps');
 $count = $rows ? count($rows) : 0;

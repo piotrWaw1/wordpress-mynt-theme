@@ -1,12 +1,12 @@
 <?php
   $logo = esc_url(get_field('logo'));
-  $description = esc_html(get_field('footer_description'));
+  $description = get_field('footer_description');
 
-  $email = esc_html(get_field('e-mail'));
-  $phone_number = esc_html(get_field('phone_number'));
-  $adress = esc_html(get_field('adress'));
+  $email = get_field('e-mail');
+  $phone_number = get_field('phone_number');
+  $adress = get_field('adress');
 
-  $instagram = (get_field('instagram'));
+  $instagram = get_field('instagram');
 ?>
 
   <footer>

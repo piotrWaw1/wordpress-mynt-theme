@@ -1,7 +1,7 @@
 <?php
-$sub_title = esc_html(get_field('sub_title'));
-$title = esc_html(get_field('title'));
-$description = esc_html(get_field('description'));
+$sub_title = get_field('sub_title');
+$title = get_field('title');
+$description = get_field('description');
 ?>
 
 

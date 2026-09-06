@@ -1,15 +1,15 @@
 <?php
 $hero_title = get_field('hero_title');
-$hero_description = esc_html(get_field('hero_description'));
+$hero_description = get_field('hero_description');
 
-$card1_image = esc_html(get_field('card1'));
-$card1_title = esc_html(get_field('card1_title'));
+$card1_image = get_field('card1');
+$card1_title = get_field('card1_title');
 
-$card2_image = esc_html(get_field('card2'));
-$card2_title = esc_html(get_field('card2_title'));
+$card2_image = get_field('card2');
+$card2_title = get_field('card2_title');
 
-$card3_image = esc_html(get_field('card3'));
-$card3_title = esc_html(get_field('card3_title'));
+$card3_image = get_field('card3');
+$card3_title = get_field('card3_title');
 ?>
 
 <section class="hero">

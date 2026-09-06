@@ -1,6 +1,6 @@
 <?php
-$title = esc_html(get_field('contact_form_title'));
-$description = esc_html(get_field('contact_form_description'));
+$title = get_field('contact_form_title');
+$description = get_field('contact_form_description');
 ?>
 
 <section id="kontakt">
