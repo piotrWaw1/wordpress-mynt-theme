@@ -1,7 +1,6 @@
 <?php
   $logo = esc_url(get_field('logo'));
-  $description = get_field('footer_description');
-
+  
   $email = get_field('e-mail');
   $phone_number = get_field('phone_number');
   $adress = get_field('adress');
@@ -27,9 +26,6 @@
             <li><a href="#kontakt" class="btn btn-ghost footer-btn">Napisz do nas →</a></li>
           </ul>
         </div>
-        <!-- <div class="footer-col">
-          <p><?php echo($description); ?></p>
-        </div> -->
         
         <div class="footer-col">
           <span class="footer-section-name">NAWIGACJA</span>
@@ -40,13 +36,13 @@
           </ul>
         </div>
       </div>
-      <div class="socials">
         <?php if ( ! empty( $instagram['instagram_url'] ) && is_array( $instagram['instagram_url'] ) ) : ?>
-            <a href="<?php echo esc_url( $instagram['instagram_url']['url'] ); ?>" aria-label="<?php echo esc_attr( $instagram['instagram_url']['title'] ); ?>">
+          <div class="socials" aria-label="Media społecznościowe">
+            <a class="social-link" href="<?php echo esc_url( $instagram['instagram_url']['url'] ); ?>" aria-label="<?php echo esc_attr( $instagram['instagram_url']['title'] ); ?>">
                 <?php echo $instagram['icon']; ?>
             </a>
+          </div>
         <?php endif; ?>
-      </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 MYNT. Wszystkie prawa zastrzeżone.</span>
