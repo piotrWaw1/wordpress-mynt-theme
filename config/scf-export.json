@@ -605,6 +605,27 @@
                 "placeholder": "",
                 "prepend": "",
                 "append": ""
+            },
+            {
+                "key": "field_6a9e93231601e",
+                "label": "Contact button",
+                "name": "contact_button",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Umów bezpłatną konsultację",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
             }
         ],
         "location": [
@@ -791,6 +812,27 @@
         "key": "group_6a9db6f9a560a",
         "title": "Navigation",
         "fields": [
+            {
+                "key": "field_6a9e935311762",
+                "label": "Nav contact button",
+                "name": "nav_contact_button",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Umów rozmowe",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
             {
                 "key": "field_6a9db6faade35",
                 "label": "Nav1",
