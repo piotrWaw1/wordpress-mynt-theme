@@ -1,6 +1,7 @@
 <?php
 $hero_title = get_field('hero_title');
 $hero_description = get_field('hero_description');
+$contact_button = get_field('contact_button');
 
 $card1_image = get_field('card1');
 $card1_title = get_field('card1_title');
@@ -18,7 +19,7 @@ $card3_title = get_field('card3_title');
       <h1><?php echo($hero_title); ?></h1>
       <p class="lead"><?php echo($hero_description); ?></p>
       <div class="hero-ctas">
-        <a href="#kontakt" class="btn btn-mint">Umów bezpłatną konsultację</a>
+        <a href="#kontakt" class="btn btn-mint"><?php echo ($contact_button)?></a>
       </div>
     </div>
 

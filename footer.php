@@ -5,8 +5,6 @@
   $phone_number = get_field('phone_number');
   $adress = get_field('adress');
 
-  $instagram = get_field('instagram');
-
   $nav1 = get_field('nav1');
   $nav2 = get_field('nav2');
   $nav3 = get_field('nav3');
@@ -27,7 +25,7 @@
             <li><a class="footer-contact-data" href="mailto:<?php echo ($email);?>"><?php echo ($email);?></a></li>
             <li><a class="footer-contact-data" href="tel:<?php echo ($phone_number);?>"><?php echo ($phone_number);?></a></li>
             <li><a class="footer-contact-data" href="#"><?php echo ($adress);?></a></li>
-            <li><a href="#kontakt" class="btn btn-ghost footer-btn">Napisz do nas →</a></li>
+            <li><a href="/#kontakt" class="btn btn-ghost footer-btn">Napisz do nas →</a></li>
           </ul>
         </div>
         
@@ -40,13 +38,7 @@
           </ul>
         </div>
       </div>
-        <?php if ( ! empty( $instagram['instagram_url'] ) && is_array( $instagram['instagram_url'] ) ) : ?>
-          <div class="socials" aria-label="Media społecznościowe">
-            <a class="social-link" href="<?php echo esc_url( $instagram['instagram_url']['url'] ); ?>" aria-label="<?php echo esc_attr( $instagram['instagram_url']['title'] ); ?>">
-                <?php echo $instagram['icon']; ?>
-            </a>
-          </div>
-        <?php endif; ?>
+      <?php get_template_part( 'template-parts/social-media-links' );?>
     </div>
     <div class="footer-bottom">
       <span>© 2026 by kreuj.się.</span>
