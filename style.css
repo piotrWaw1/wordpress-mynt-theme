@@ -1170,7 +1170,7 @@ section {
   width: 24px;
 }
 iframe {
-  width: 100%;
+  width: 100% !important;
 }
 /* ---------- FOOTER ---------- */
 footer {
