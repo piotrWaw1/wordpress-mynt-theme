@@ -4,10 +4,8 @@
  */
 get_header();
 ?>
-
-<main>
     <?php get_template_part( 'template-parts/site-nav' );?>
-    <section class="policy-section">
+    <main class="policy-section">
         <div class="wrap">
             <?php while ( have_posts() ) : the_post(); ?>
                 <h1 class="policy-header"><?php the_title(); ?></h1>
@@ -16,7 +14,5 @@ get_header();
                 </div>
             <?php endwhile; ?>
         </div>
-    </section>
-</main>
-
+    </main>
 <?php get_footer(); ?>

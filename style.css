@@ -1119,7 +1119,6 @@ section {
 .cta-form label {
   display: inline-block;
   font-size: 14.5px;
-  /* font-family: "JetBrains Mono", monospace; */
   color: var(--text-muted);
   margin-bottom: 8px;
 }
@@ -1169,6 +1168,9 @@ section {
 .wpcf7-list-item label input {
   margin-top: 4px;
   width: 24px;
+}
+iframe {
+  width: 100%;
 }
 /* ---------- FOOTER ---------- */
 footer {
