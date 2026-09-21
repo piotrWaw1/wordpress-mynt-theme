@@ -60,3 +60,13 @@ const io = new IntersectionObserver(
   { threshold: 0.15 },
 );
 revealEls.forEach((el) => io.observe(el));
+
+document.addEventListener("DOMContentLoaded", function () {
+  var widget = document.querySelector(".cf-turnstile");
+  if (widget) {
+    widget.setAttribute(
+      "data-size",
+      window.innerWidth < 480 ? "compact" : "flexible",
+    );
+  }
+});

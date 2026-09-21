@@ -545,7 +545,7 @@ header.scrolled nav {
 
 .post-card {
   position: absolute;
-  width: 280px;
+  width: 300px;
   background: var(--card);
   border-radius: 20px;
   box-shadow: 0 30px 70px -20px rgba(0, 0, 0, 0.55);
@@ -555,7 +555,7 @@ header.scrolled nav {
   backdrop-filter: blur(6px);
 }
 .post-card .thumb {
-  height: 190px;
+  height: 225px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -641,7 +641,7 @@ header.scrolled nav {
 }
 .post-card.c2 {
   top: 160px;
-  right: 0px;
+  right: -40px;
   rotate: 6deg;
   animation-delay: 1.2s;
   z-index: 3;
@@ -650,12 +650,13 @@ header.scrolled nav {
   background: linear-gradient(135deg, #5fe9bc, #1f9e77);
 }
 .post-card.c3 {
-  bottom: 0px;
+  bottom: -40px;
   left: 80px;
   rotate: -3deg;
   animation-delay: 2.4s;
   z-index: 1;
 }
+
 .post-card.c3 .thumb {
   background: linear-gradient(135deg, #3a1e6b, #7c4dff);
 }
@@ -1169,9 +1170,6 @@ section {
   margin-top: 4px;
   width: 24px;
 }
-iframe {
-  width: 100% !important;
-}
 /* ---------- FOOTER ---------- */
 footer {
   padding: 70px 0 36px;
@@ -1315,6 +1313,12 @@ footer {
     grid-template-columns: 1fr;
     padding: 48px 32px;
     border-radius: 24px;
+  }
+  .post-card.c2 {
+    right: 0px;
+  }
+  .post-card.c3 {
+    bottom: 0px;
   }
 }
 
