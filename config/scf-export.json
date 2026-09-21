@@ -162,7 +162,7 @@
                 {
                     "param": "page",
                     "operator": "==",
-                    "value": "7"
+                    "value": "8"
                 }
             ]
         ],
@@ -272,11 +272,11 @@
                 "append": ""
             },
             {
-                "key": "field_6a9812246f877",
-                "label": "Instagram",
-                "name": "instagram",
+                "key": "field_6ab133e8b130d",
+                "label": "Social Media",
+                "name": "social_media",
                 "aria-label": "",
-                "type": "group",
+                "type": "repeater",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -286,9 +286,33 @@
                     "id": ""
                 },
                 "layout": "block",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add Row",
+                "rows_per_page": 20,
                 "sub_fields": [
                     {
-                        "key": "field_6a9812996f878",
+                        "key": "field_6ab1411bb3dde",
+                        "label": "Link",
+                        "name": "link",
+                        "aria-label": "",
+                        "type": "link",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "allow_in_bindings": 0,
+                        "parent_repeater": "field_6ab133e8b130d"
+                    },
+                    {
+                        "key": "field_6ab14129b3ddf",
                         "label": "Icon",
                         "name": "icon",
                         "aria-label": "",
@@ -301,29 +325,13 @@
                             "class": "",
                             "id": ""
                         },
-                        "default_value": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"5\"\/><circle cx=\"12\" cy=\"12\" r=\"4\"\/><circle cx=\"17.5\" cy=\"6.5\" r=\"1\"\/><\/svg>",
+                        "default_value": "",
                         "maxlength": "",
                         "allow_in_bindings": 0,
                         "placeholder": "",
                         "prepend": "",
-                        "append": ""
-                    },
-                    {
-                        "key": "field_6a9812e66f87a",
-                        "label": "Instagram url",
-                        "name": "instagram_url",
-                        "aria-label": "",
-                        "type": "link",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "return_format": "array",
-                        "allow_in_bindings": 0
+                        "append": "",
+                        "parent_repeater": "field_6ab133e8b130d"
                     }
                 ]
             }
@@ -402,7 +410,7 @@
                 {
                     "param": "page",
                     "operator": "==",
-                    "value": "7"
+                    "value": "8"
                 }
             ]
         ],
@@ -633,7 +641,7 @@
                 {
                     "param": "page",
                     "operator": "==",
-                    "value": "7"
+                    "value": "8"
                 }
             ]
         ],
@@ -791,7 +799,7 @@
                 {
                     "param": "page",
                     "operator": "==",
-                    "value": "7"
+                    "value": "8"
                 }
             ]
         ],
