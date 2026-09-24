@@ -23,7 +23,9 @@ $contact_button = get_field('contact_button', 'option');
     <?php endif; ?>
     <div class="nav-cta">
       <?php get_template_part( 'template-parts/social-media-links' );?>
-      <a href="<?php echo esc_url($contact_button["url"])?>" class="btn btn-primary"><?php echo ($contact_button["title"])?></a>
+      <?php if ($contact_button) :?>
+        <a href="<?php echo esc_url($contact_button["url"])?>" class="btn btn-primary"><?php echo ($contact_button["title"])?></a>
+      <?php endif;?>
     </div>
     <button class="hamburger" id="hamburgerBtn" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobileMenu">
       <span></span><span></span><span></span>
@@ -42,6 +44,8 @@ $contact_button = get_field('contact_button', 'option');
       </div>
     <?php endif; ?>
     <?php get_template_part( 'template-parts/social-media-links' );?>
-    <a href="<?php echo esc_url($contact_button["url"])?>" class="btn btn-primary mobile-menu-cta"><?php echo ($contact_button["title"])?></a>
+    <?php if ($contact_button) :?>
+      <a href="<?php echo esc_url($contact_button["url"])?>" class="btn btn-primary mobile-menu-cta"><?php echo ($contact_button["title"])?></a>
+    <?php endif;?>
   </div>
 </header>
