@@ -17,7 +17,7 @@
                     "class": "",
                     "id": ""
                 },
-                "default_value": "Kompleksowa obsługa marketingowa dla firm",
+                "default_value": "CO ROBIMY",
                 "maxlength": "",
                 "allow_in_bindings": 0,
                 "placeholder": "",
@@ -162,186 +162,7 @@
                 {
                     "param": "page",
                     "operator": "==",
-                    "value": "51"
-                }
-            ]
-        ],
-        "menu_order": 0,
-        "position": "normal",
-        "style": "default",
-        "label_placement": "top",
-        "instruction_placement": "label",
-        "hide_on_screen": "",
-        "active": true,
-        "description": "",
-        "show_in_rest": 0,
-        "display_title": "",
-        "allow_ai_access": false,
-        "ai_description": ""
-    },
-    {
-        "key": "group_6a980f3334ef4",
-        "title": "Common fields",
-        "fields": [
-            {
-                "key": "field_6a980f33de68d",
-                "label": "Logo",
-                "name": "logo",
-                "aria-label": "",
-                "type": "image",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "url",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": "",
-                "allow_in_bindings": 0,
-                "preview_size": "medium"
-            },
-            {
-                "key": "field_6a9811a76f874",
-                "label": "E-mail",
-                "name": "e-mail",
-                "aria-label": "",
-                "type": "email",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "hello@mynt-social.pl",
-                "allow_in_bindings": 0,
-                "placeholder": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_6a9811e56f875",
-                "label": "Phone number",
-                "name": "phone_number",
-                "aria-label": "",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "maxlength": "",
-                "allow_in_bindings": 0,
-                "placeholder": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_6a9811fe6f876",
-                "label": "Adress",
-                "name": "adress",
-                "aria-label": "",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "maxlength": "",
-                "allow_in_bindings": 0,
-                "placeholder": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_6ab164f186390",
-                "label": "Social Media",
-                "name": "social_media",
-                "aria-label": "",
-                "type": "repeater",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "layout": "block",
-                "pagination": 0,
-                "min": 0,
-                "max": 0,
-                "collapsed": "",
-                "button_label": "Dodaj wiersz",
-                "rows_per_page": 20,
-                "sub_fields": [
-                    {
-                        "key": "field_6ab1650786391",
-                        "label": "Link",
-                        "name": "link",
-                        "aria-label": "",
-                        "type": "link",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "return_format": "array",
-                        "allow_in_bindings": 0,
-                        "parent_repeater": "field_6ab164f186390"
-                    },
-                    {
-                        "key": "field_6ab1652086392",
-                        "label": "Icon",
-                        "name": "icon",
-                        "aria-label": "",
-                        "type": "text",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "default_value": "",
-                        "maxlength": "",
-                        "allow_in_bindings": 0,
-                        "placeholder": "",
-                        "prepend": "",
-                        "append": "",
-                        "parent_repeater": "field_6ab164f186390"
-                    }
-                ]
-            }
-        ],
-        "location": [
-            [
-                {
-                    "param": "post_type",
-                    "operator": "==",
-                    "value": "page"
+                    "value": "8"
                 }
             ]
         ],
@@ -410,7 +231,7 @@
                 {
                     "param": "page",
                     "operator": "==",
-                    "value": "51"
+                    "value": "8"
                 }
             ]
         ],
@@ -428,13 +249,13 @@
         "ai_description": ""
     },
     {
-        "key": "group_6a9813115114b",
-        "title": "Footer",
+        "key": "group_6ab561c43de01",
+        "title": "FAQ",
         "fields": [
             {
-                "key": "field_6a981311a8e87",
-                "label": "Footer description",
-                "name": "footer_description",
+                "key": "field_6ab561c4728ee",
+                "label": "Sub title",
+                "name": "sub_title_faq",
                 "aria-label": "",
                 "type": "text",
                 "instructions": "",
@@ -445,20 +266,130 @@
                     "class": "",
                     "id": ""
                 },
-                "default_value": "Agencja social media dla marek, które chcą prowadzić rozmowę, a nie tylko publikować.",
+                "default_value": "PYTANIA",
                 "maxlength": "",
                 "allow_in_bindings": 0,
                 "placeholder": "",
                 "prepend": "",
                 "append": ""
+            },
+            {
+                "key": "field_6ab561eb728ef",
+                "label": "Title",
+                "name": "title_faq",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Najczęściej zadawane pytania",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6ab561ff728f0",
+                "label": "Description",
+                "name": "description_faq",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "To, co klienci pytają nas najczęściej przed rozpoczęciem współpracy. Nie znalazłeś odpowiedzi? Po prostu napisz.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6ab5621ab7b06",
+                "label": "Questions",
+                "name": "questions",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add Row",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_6ab5623bb7b07",
+                        "label": "Question",
+                        "name": "question",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "allow_in_bindings": 0,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_6ab5621ab7b06"
+                    },
+                    {
+                        "key": "field_6ab56248b7b08",
+                        "label": "Answer",
+                        "name": "answer",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "allow_in_bindings": 0,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_6ab5621ab7b06"
+                    }
+                ]
             }
         ],
         "location": [
             [
                 {
-                    "param": "post_type",
+                    "param": "page",
                     "operator": "==",
-                    "value": "page"
+                    "value": "8"
                 }
             ]
         ],
@@ -663,7 +594,7 @@
                 "append": ""
             },
             {
-                "key": "field_6a9e99abf2633",
+                "key": "field_6a9e93231601e",
                 "label": "Contact button",
                 "name": "contact_button",
                 "aria-label": "",
@@ -689,7 +620,7 @@
                 {
                     "param": "page",
                     "operator": "==",
-                    "value": "51"
+                    "value": "8"
                 }
             ]
         ],
@@ -847,7 +778,7 @@
                 {
                     "param": "page",
                     "operator": "==",
-                    "value": "51"
+                    "value": "8"
                 }
             ]
         ],
@@ -865,13 +796,167 @@
         "ai_description": ""
     },
     {
-        "key": "group_6a981355e97a0",
-        "title": "Navigation",
+        "key": "group_6ab52e41bc25a",
+        "title": "Navbar and Footer",
         "fields": [
             {
-                "key": "field_6a9e9981d970b",
-                "label": "Nav contact button",
-                "name": "nav_contact_button",
+                "key": "field_6ab53ba1d4428",
+                "label": "Logo",
+                "name": "logo",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "allow_in_bindings": 0,
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_6ab53bea5108f",
+                "label": "Navigation",
+                "name": "navigation",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add Row",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_6ab53bf751090",
+                        "label": "Navigation item",
+                        "name": "navigation_item",
+                        "aria-label": "",
+                        "type": "link",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "allow_in_bindings": 0,
+                        "parent_repeater": "field_6ab53bea5108f"
+                    }
+                ]
+            },
+            {
+                "key": "field_6ab53c614565a",
+                "label": "Social media",
+                "name": "social_media",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add Row",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_6ab53caa4565c",
+                        "label": "Link",
+                        "name": "link",
+                        "aria-label": "",
+                        "type": "link",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "allow_in_bindings": 0,
+                        "parent_repeater": "field_6ab53c614565a"
+                    },
+                    {
+                        "key": "field_6ab53cbe4565d",
+                        "label": "Icon",
+                        "name": "icon",
+                        "aria-label": "",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "",
+                        "allow_in_bindings": 0,
+                        "preview_size": "medium",
+                        "parent_repeater": "field_6ab53c614565a"
+                    }
+                ]
+            },
+            {
+                "key": "field_6ab53ce13e0d7",
+                "label": "Contact button",
+                "name": "contact_button",
+                "aria-label": "",
+                "type": "link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "allow_in_bindings": 0
+            },
+            {
+                "key": "field_6ab53d6dcbfd2",
+                "label": "E-mail",
+                "name": "e-mail",
                 "aria-label": "",
                 "type": "text",
                 "instructions": "",
@@ -882,7 +967,7 @@
                     "class": "",
                     "id": ""
                 },
-                "default_value": "Umów rozmowe",
+                "default_value": "",
                 "maxlength": "",
                 "allow_in_bindings": 0,
                 "placeholder": "",
@@ -890,9 +975,9 @@
                 "append": ""
             },
             {
-                "key": "field_6a9dbdcebc178",
-                "label": "Nav1",
-                "name": "nav1",
+                "key": "field_6ab53d7bcbfd3",
+                "label": "Phone number",
+                "name": "phone_number",
                 "aria-label": "",
                 "type": "text",
                 "instructions": "",
@@ -903,7 +988,7 @@
                     "class": "",
                     "id": ""
                 },
-                "default_value": "Usługi",
+                "default_value": "",
                 "maxlength": "",
                 "allow_in_bindings": 0,
                 "placeholder": "",
@@ -911,9 +996,9 @@
                 "append": ""
             },
             {
-                "key": "field_6a9dbddbbc179",
-                "label": "Nav2",
-                "name": "nav2",
+                "key": "field_6ab53d83cbfd4",
+                "label": "Adress",
+                "name": "adress",
                 "aria-label": "",
                 "type": "text",
                 "instructions": "",
@@ -924,28 +1009,7 @@
                     "class": "",
                     "id": ""
                 },
-                "default_value": "Proces",
-                "maxlength": "",
-                "allow_in_bindings": 0,
-                "placeholder": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_6a9dbde5bc17a",
-                "label": "Nav3",
-                "name": "nav3",
-                "aria-label": "",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "Kontakt",
+                "default_value": "",
                 "maxlength": "",
                 "allow_in_bindings": 0,
                 "placeholder": "",
@@ -956,9 +1020,9 @@
         "location": [
             [
                 {
-                    "param": "post_type",
+                    "param": "options_page",
                     "operator": "==",
-                    "value": "page"
+                    "value": "theme-settings"
                 }
             ]
         ],
