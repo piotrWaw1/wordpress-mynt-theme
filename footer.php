@@ -25,7 +25,7 @@
               <li><a class="footer-contact-data" href="tel:<?php echo ($phone_number);?>"><?php echo ($phone_number);?></a></li>
             <?php endif; ?>
             <?php if ( $adress ) : ?>
-            <li><a class="footer-contact-data" href="#"><?php echo ($adress);?></a></li>
+              <li><a class="footer-contact-data" href="#"><?php echo ($adress);?></a></li>
             <?php endif; ?>
             <li><a href="/#kontakt" class="btn btn-ghost footer-btn">Napisz do nas →</a></li>
           </ul>

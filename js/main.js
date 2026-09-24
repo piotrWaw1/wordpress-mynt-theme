@@ -70,3 +70,25 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
 });
+
+// FAQ accordion
+const faqItems = document.querySelectorAll("#faqList .faq-item");
+faqItems.forEach((item) => {
+  const question = item.querySelector(".faq-question");
+  const answer = item.querySelector(".faq-answer");
+  question.addEventListener("click", () => {
+    const isOpen = item.classList.contains("open");
+    faqItems.forEach((other) => {
+      other.classList.remove("open");
+      other.querySelector(".faq-answer").style.maxHeight = null;
+      other
+        .querySelector(".faq-question")
+        .setAttribute("aria-expanded", "false");
+    });
+    if (!isOpen) {
+      item.classList.add("open");
+      answer.style.maxHeight = answer.scrollHeight + "px";
+      question.setAttribute("aria-expanded", "true");
+    }
+  });
+});

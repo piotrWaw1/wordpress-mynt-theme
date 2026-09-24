@@ -727,9 +727,6 @@ section {
     scroll-margin-top: 350px;
   }
 }
-.alt-bg {
-  background: var(--bg-900);
-}
 .section-head {
   max-width: 640px;
   margin-bottom: 64px;
@@ -1283,6 +1280,98 @@ footer {
 }
 .policy-main-point-space {
   margin-bottom: 20px;
+}
+
+/* ---------- FAQ ---------- */
+.faq-list {
+  max-width: 820px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.faq-item {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+.faq-item:hover {
+  border-color: rgba(95, 233, 188, 0.25);
+}
+.faq-item.open {
+  border-color: rgba(95, 233, 188, 0.35);
+  background: var(--card-hover);
+}
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 24px 26px;
+  text-align: left;
+  font-size: 16.5px;
+  font-weight: 600;
+  color: var(--white);
+}
+.faq-icon {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  line-height: 1;
+  color: var(--mint-400);
+  transition:
+    transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+.faq-item.open .faq-icon {
+  background: var(--mint-400);
+  color: var(--bg-950);
+  border-color: var(--mint-400);
+  transform: rotate(135deg);
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.faq-answer p {
+  padding: 0 26px 26px;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--text-muted);
+  max-width: 640px;
+}
+.faq-note {
+  margin-top: 36px;
+  font-size: 14.5px;
+  color: var(--text-muted);
+}
+.faq-note a {
+  color: var(--mint-300);
+  font-weight: 600;
+  border-bottom: 1px solid rgba(95, 233, 188, 0.4);
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+.faq-note a:hover {
+  color: var(--mint-400);
+  border-color: var(--mint-400);
 }
 
 /* ---------- RESPONSIVE ---------- */
