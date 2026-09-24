@@ -17,7 +17,7 @@
                     "class": "",
                     "id": ""
                 },
-                "default_value": "CO ROBIMY",
+                "default_value": "Kompleksowa obsługa marketingowa dla firm",
                 "maxlength": "",
                 "allow_in_bindings": 0,
                 "placeholder": "",
@@ -162,7 +162,7 @@
                 {
                     "param": "page",
                     "operator": "==",
-                    "value": "8"
+                    "value": "51"
                 }
             ]
         ],
@@ -272,7 +272,7 @@
                 "append": ""
             },
             {
-                "key": "field_6ab133e8b130d",
+                "key": "field_6ab164f186390",
                 "label": "Social Media",
                 "name": "social_media",
                 "aria-label": "",
@@ -290,11 +290,11 @@
                 "min": 0,
                 "max": 0,
                 "collapsed": "",
-                "button_label": "Add Row",
+                "button_label": "Dodaj wiersz",
                 "rows_per_page": 20,
                 "sub_fields": [
                     {
-                        "key": "field_6ab1411bb3dde",
+                        "key": "field_6ab1650786391",
                         "label": "Link",
                         "name": "link",
                         "aria-label": "",
@@ -309,10 +309,10 @@
                         },
                         "return_format": "array",
                         "allow_in_bindings": 0,
-                        "parent_repeater": "field_6ab133e8b130d"
+                        "parent_repeater": "field_6ab164f186390"
                     },
                     {
-                        "key": "field_6ab14129b3ddf",
+                        "key": "field_6ab1652086392",
                         "label": "Icon",
                         "name": "icon",
                         "aria-label": "",
@@ -331,7 +331,7 @@
                         "placeholder": "",
                         "prepend": "",
                         "append": "",
-                        "parent_repeater": "field_6ab133e8b130d"
+                        "parent_repeater": "field_6ab164f186390"
                     }
                 ]
             }
@@ -410,7 +410,55 @@
                 {
                     "param": "page",
                     "operator": "==",
-                    "value": "8"
+                    "value": "51"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_6a9813115114b",
+        "title": "Footer",
+        "fields": [
+            {
+                "key": "field_6a981311a8e87",
+                "label": "Footer description",
+                "name": "footer_description",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Agencja social media dla marek, które chcą prowadzić rozmowę, a nie tylko publikować.",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
                 }
             ]
         ],
@@ -615,7 +663,7 @@
                 "append": ""
             },
             {
-                "key": "field_6a9e93231601e",
+                "key": "field_6a9e99abf2633",
                 "label": "Contact button",
                 "name": "contact_button",
                 "aria-label": "",
@@ -641,7 +689,7 @@
                 {
                     "param": "page",
                     "operator": "==",
-                    "value": "8"
+                    "value": "51"
                 }
             ]
         ],
@@ -799,7 +847,7 @@
                 {
                     "param": "page",
                     "operator": "==",
-                    "value": "8"
+                    "value": "51"
                 }
             ]
         ],
@@ -817,11 +865,11 @@
         "ai_description": ""
     },
     {
-        "key": "group_6a9db6f9a560a",
+        "key": "group_6a981355e97a0",
         "title": "Navigation",
         "fields": [
             {
-                "key": "field_6a9e935311762",
+                "key": "field_6a9e9981d970b",
                 "label": "Nav contact button",
                 "name": "nav_contact_button",
                 "aria-label": "",
@@ -842,7 +890,7 @@
                 "append": ""
             },
             {
-                "key": "field_6a9db6faade35",
+                "key": "field_6a9dbdcebc178",
                 "label": "Nav1",
                 "name": "nav1",
                 "aria-label": "",
@@ -863,7 +911,7 @@
                 "append": ""
             },
             {
-                "key": "field_6a9db71cade36",
+                "key": "field_6a9dbddbbc179",
                 "label": "Nav2",
                 "name": "nav2",
                 "aria-label": "",
@@ -884,7 +932,7 @@
                 "append": ""
             },
             {
-                "key": "field_6a9db72bade37",
+                "key": "field_6a9dbde5bc17a",
                 "label": "Nav3",
                 "name": "nav3",
                 "aria-label": "",
