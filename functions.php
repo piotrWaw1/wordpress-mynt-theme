@@ -164,3 +164,18 @@ function mytheme_customizer_css() {
     <?php
 }
 add_action( 'wp_head', 'mytheme_customizer_css' );
+
+
+function my_theme_register_options_page() {
+    if ( function_exists( 'acf_add_options_page' ) ) {
+        acf_add_options_page( array(
+            'page_title' => 'Theme Settings',
+            'menu_title' => 'Theme Settings',
+            'menu_slug'  => 'theme-settings',
+            'capability' => 'edit_theme_options',
+            'icon_url'   => 'dashicons-admin-customizer',
+            'redirect'   => false,
+        ) );
+    }
+}
+add_action( 'acf/init', 'my_theme_register_options_page' );

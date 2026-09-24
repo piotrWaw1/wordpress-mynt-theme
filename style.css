@@ -194,16 +194,20 @@ footer {
     background 0.2s ease,
     transform 0.2s ease;
 }
-.social-link svg {
-  width: 22px;
-  height: 22px;
-}
 .social-link:hover {
   color: var(--bg-950);
   background: var(--mint-400);
   border-color: var(--mint-400);
   transform: translateY(-2px);
   box-shadow: 0 0 14px var(--mint-glow);
+}
+.logo-social-media {
+  filter: brightness(0) saturate(100%) invert(69%) sepia(12%) saturate(633%)
+    hue-rotate(214deg) brightness(90%) contrast(89%);
+  width: 18px;
+}
+.social-link:hover .logo-social-media {
+  filter: brightness(0) saturate(100%);
 }
 /* ---------- SCROLL PROGRESS ---------- */
 .scroll-progress {
@@ -255,7 +259,6 @@ header.scrolled nav {
 .logo {
   width: 220px;
 }
-
 .logo .dot {
   color: var(--mint-400);
 }

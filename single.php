@@ -6,24 +6,13 @@
         <div class="wrap">
 
             <a href="<?php echo esc_url( get_permalink( get_option('page_for_posts') ) ); ?>" class="back-to-blog">
-                &larr; Back to Blog
+                &larr; Wróć do spisu treści
             </a>
 
             <?php while ( have_posts() ) : the_post(); ?>
                 <article <?php post_class('single-post'); ?>>
 
                     <div class="single-post-header">
-                        <?php
-                        $categories = get_the_category();
-                        if ( ! empty( $categories ) ) : ?>
-                            <div class="single-post-cats">
-                                <?php foreach ( $categories as $cat ) : ?>
-                                    <a href="<?php echo esc_url( get_category_link( $cat->term_id ) ); ?>" class="cat-pill">
-                                        <?php echo esc_html( $cat->name ); ?>
-                                    </a>
-                                <?php endforeach; ?>
-                            </div>
-                        <?php endif; ?>
 
                         <h1 class="single-post-title"><?php the_title(); ?></h1>
 
@@ -35,13 +24,7 @@
                             }
                         }
                         ?>
-
                         <div class="single-post-meta">
-                            <span class="single-post-author">
-                                <?php echo get_avatar( get_the_author_meta('ID'), 32 ); ?>
-                                <?php the_author(); ?>
-                            </span>
-                            <span class="meta-dot">&bull;</span>
                             <time datetime="<?php echo get_the_date('c'); ?>">
                                 <?php echo get_the_date(); ?>
                             </time>
@@ -50,7 +33,7 @@
 
                     <?php if ( has_post_thumbnail() ) : ?>
                         <div class="single-post-thumb">
-                            <?php the_post_thumbnail( 'large' ); ?>
+                            <?php the_post_thumbnail( 'small' ); ?>
                         </div>
                     <?php endif; ?>
 

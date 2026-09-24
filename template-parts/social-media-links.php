@@ -1,6 +1,6 @@
-<?php if ( have_rows('social_media') ) : ?>
+<?php if ( have_rows('social_media', 'option') ) : ?>
     <div class="socials">
-        <?php while ( have_rows('social_media') ) : the_row();
+        <?php while ( have_rows('social_media', 'option') ) : the_row();
                     $link = get_sub_field('link');
                     $icon = get_sub_field('icon');
                     if ( ! $link || ! $icon ) continue;
@@ -14,7 +14,7 @@
                         <?php endif; ?>
                         aria-label="<?php echo esc_attr( $link['title'] ); ?>"
                     >
-                        <?php echo $icon; ?>
+                        <img src="<?php echo esc_url( $icon ); ?>" alt="<?php echo esc_attr( $link['title'] ); ?>" class="logo-social-media">
                     </a>
         <?php endwhile; ?>
     </div>
