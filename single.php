@@ -6,7 +6,8 @@
         <div class="wrap">
 
             <a href="<?php echo esc_url( get_permalink( get_option('page_for_posts') ) ); ?>" class="back-to-blog">
-                &larr; Wróć do spisu treści
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left preview-icon"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg> 
+                Wróć do spisu treści
             </a>
 
             <?php while ( have_posts() ) : the_post(); ?>
@@ -62,7 +63,10 @@
                     ?>
                     <?php if ( ! empty( $prev_post ) ) : ?>
                         <a href="<?php echo esc_url( get_permalink( $prev_post ) ); ?>" class="post-nav-link post-nav-prev">
-                            <span class="post-nav-label">&larr; Previous</span>
+                            <span class="post-nav-label">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left preview-icon"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+                                Poprzedni
+                            </span>
                             <span class="post-nav-title"><?php echo esc_html( get_the_title( $prev_post ) ); ?></span>
                         </a>
                     <?php else : ?>
@@ -71,7 +75,10 @@
 
                     <?php if ( ! empty( $next_post ) ) : ?>
                         <a href="<?php echo esc_url( get_permalink( $next_post ) ); ?>" class="post-nav-link post-nav-next">
-                            <span class="post-nav-label">Next &rarr;</span>
+                            <span class="post-nav-label">
+                                Następny
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right preview-icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </span>
                             <span class="post-nav-title"><?php echo esc_html( get_the_title( $next_post ) ); ?></span>
                         </a>
                     <?php endif; ?>

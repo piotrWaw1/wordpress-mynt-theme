@@ -1196,7 +1196,6 @@ footer {
 }
 .footer-section-name {
   display: block;
-  /* font-family: "JetBrains Mono", monospace; */
   font-weight: 900;
   color: var(--text-muted);
   text-transform: uppercase;
@@ -1206,7 +1205,6 @@ footer {
 .footer-contact-data {
   font-size: clamp(24px, 3vw, 32px);
   font-weight: 600;
-  /* font-family: "JetBrains Mono", sans-serif; */
   color: #fff;
   line-height: 1.25;
   transition: color 0.2s ease;
@@ -1787,8 +1785,8 @@ footer {
 /* ---------- PREV / NEXT NAV ---------- */
 .single-post-nav {
   display: flex;
-  justify-content: flex-end;
-  /* grid-template-columns: 1fr 1fr; */
+  justify-content: space-between;
+  padding: 20px 0px;
   gap: 20px;
   margin-top: 60px;
 }
@@ -1819,11 +1817,15 @@ footer {
 }
 
 .post-nav-label {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
   font-family: "JetBrains Mono", monospace;
   font-size: 14px;
   color: var(--mint-300);
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  align-items: center;
 }
 
 .post-nav-title {
@@ -1850,7 +1852,7 @@ footer {
   }
 }
 
-/* 404 page */
+/* ---------- 404 page ---------- */
 .error-inner {
   max-width: 640px;
   margin: 0 auto;
@@ -1917,7 +1919,7 @@ main p.lead {
   background: rgba(95, 233, 188, 0.06);
 }
 
-/* Polityka prywatności */
+/* ---------- Polityka prywatności ---------- */
 .policy-inner-list {
   line-height: 1.2rem;
 }
