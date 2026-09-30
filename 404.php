@@ -14,7 +14,7 @@ $description_404= esc_html(get_field("description_404", "option"));
                 <div>
                     <div class="error-code">404</div>
                     <h2><?php echo $title_404?></h2>
-                    <p class="lead"><?php echo $description_404?></p>
+                    <p class="error-lead"><?php echo $description_404?></p>
                     <div class="error-ctas">
                         <a href="/" class="btn btn-mint">Wróć na stronę główną</a>
                         <a href="/#kontakt" class="btn btn-ghost">Skontaktuj się z nami →</a>

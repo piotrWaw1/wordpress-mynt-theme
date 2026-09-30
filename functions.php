@@ -179,3 +179,97 @@ function my_theme_register_options_page() {
     }
 }
 add_action( 'acf/init', 'my_theme_register_options_page' );
+
+function mytheme_enqueue_blog_filter() {
+    if ( ! is_home() ) {
+        return;
+    }
+
+    wp_enqueue_script(
+        'blog-filter',
+        get_template_directory_uri() . '/js/blog-filter.js',
+        array(),
+        '1.0',
+        true
+    );
+
+    wp_localize_script( 'blog-filter', 'blogFilter', array(
+        'ajaxUrl' => admin_url( 'admin-ajax.php' ),
+        'nonce'   => wp_create_nonce( 'blog_filter_nonce' ),
+    ) );
+}
+add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_blog_filter' );
+
+function mytheme_filter_posts() {
+    check_ajax_referer( 'blog_filter_nonce', 'nonce' );
+
+    $category    = isset( $_POST['category'] ) ? sanitize_title( wp_unslash( $_POST['category'] ) ) : '';
+    $paged       = isset( $_POST['paged'] ) ? max( 1, absint( $_POST['paged'] ) ) : 1;
+    
+    $featured_post_id   = 0;
+    $featured_post_html = '';
+
+    // Only render featured post on page 1
+    if ( 1 === $paged ) {
+        $featured_args = array(
+            'post_type'      => 'post',
+            'post_status'    => 'publish',
+            'posts_per_page' => 1,
+            'orderby'        => 'date',
+            'order'          => 'DESC',
+        );
+
+        if ( $category ) {
+            $featured_args['category_name'] = $category;
+        }
+
+        $featured_query = new WP_Query( $featured_args );
+
+        ob_start();
+        if ( $featured_query->have_posts() ) {
+            while ( $featured_query->have_posts() ) {
+                $featured_query->the_post(); // Populates global $post context for template tags
+                $featured_post_id = get_the_ID();
+                get_template_part( 'template-parts/content-featured-post-card' );
+            }
+            wp_reset_postdata();
+        }
+        $featured_post_html = ob_get_clean();
+    }
+
+    $args = array(
+        'post_type'           => 'post',
+        'post_status'         => 'publish',
+        'posts_per_page'      => get_option( 'posts_per_page' ),
+        'post__not_in'        => $featured_post_id ? array( $featured_post_id ) : array(),        
+        'paged'               => $paged,
+        'ignore_sticky_posts' => true,
+    );
+
+    if ( $category ) {
+        $args['category_name'] = $category;
+    }
+
+    $query = new WP_Query( $args );
+
+    ob_start();
+
+    if ( $query->have_posts() ) {
+        while ( $query->have_posts() ) {
+            $query->the_post();
+            get_template_part( 'template-parts/content-post-card');
+        }
+    } else {
+        echo '';
+    }
+    wp_reset_postdata();
+    $posts_html = ob_get_clean();
+
+    wp_send_json_success( array(
+        'feature_post_html'=> $featured_post_html,
+        'posts_html' => $posts_html,
+        'max_pages'  => (int) $query->max_num_pages,
+    ) );
+}
+add_action( 'wp_ajax_filter_posts', 'mytheme_filter_posts' );        // logged-in users
+add_action( 'wp_ajax_nopriv_filter_posts', 'mytheme_filter_posts' ); // visitors
