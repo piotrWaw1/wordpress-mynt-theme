@@ -12,6 +12,8 @@ $featured_query = new WP_Query( array(
     'post_status'         => 'publish',
     'posts_per_page'      => 1,
     'ignore_sticky_posts'  => true,
+    'has_password' => false,
+
 ) );
 
 $featured_id = 0;
@@ -27,6 +29,8 @@ $grid_query = new WP_Query( array(
     'post__not_in'        => $featured_id ? array( $featured_id ) : array(),
     'ignore_sticky_posts' => true,
     'paged'               => get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1,
+    'has_password' => false,
+
 ) );
 
 $max_pages = $grid_query->max_num_pages;

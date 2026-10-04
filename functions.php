@@ -1,5 +1,7 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 function get_title(){
     add_theme_support('title-tag');
     add_theme_support( 'post-thumbnails' );
@@ -24,17 +26,6 @@ function mytheme_resource_hints( $urls, $relation_type ) {
     return $urls;
 }
 add_filter( 'wp_resource_hints', 'mytheme_resource_hints', 10, 2 );
-
-// Enqueue the actual font stylesheet
-function mytheme_enqueue_fonts() {
-    wp_enqueue_style(
-        'mytheme-google-fonts',
-        'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap',
-        [],
-        null
-    );
-}
-add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_fonts' );
 
 function mytheme_enqueue_scripts() {
     wp_enqueue_script(
@@ -217,6 +208,7 @@ function mytheme_filter_posts() {
             'posts_per_page' => 1,
             'orderby'        => 'date',
             'order'          => 'DESC',
+            'has_password' => false
         );
 
         if ( $category ) {
@@ -244,6 +236,7 @@ function mytheme_filter_posts() {
         'post__not_in'        => $featured_post_id ? array( $featured_post_id ) : array(),        
         'paged'               => $paged,
         'ignore_sticky_posts' => true,
+        'has_password' => false
     );
 
     if ( $category ) {

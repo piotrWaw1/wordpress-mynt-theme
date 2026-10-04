@@ -69,7 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   if (!loadMoreBtn) return;
+  let isLoading = false;
   loadMoreBtn.addEventListener("click", async (e) => {
+    if (isLoading) return;
+
     const innerGrid = document.getElementById("innerGrid");
     if (!innerGrid) return;
 
@@ -84,15 +87,14 @@ document.addEventListener("DOMContentLoaded", () => {
     data.append("featured_id", filters.dataset.featuredId);
     data.append("paged", page);
 
-    if (controller) controller.abort();
-    controller = new AbortController();
     grid.classList.add("is-loading");
 
+    isLoading = true;
+    console.log("loading more");
     try {
       const response = await fetch(blogFilter.ajaxUrl, {
         method: "POST",
         body: data,
-        signal: controller.signal,
       });
       const result = await response.json();
       if (result.success) {
@@ -105,10 +107,11 @@ document.addEventListener("DOMContentLoaded", () => {
       if (err.name !== "AbortError") {
         innerGrid.insertAdjacentHTML(
           "beforeend",
-          '<p class="no-posts">Coś poszło nietak. Spróbuj ponownie później.</p>',
+          '<p class="no-posts">Coś poszło nie tak. Spróbuj ponownie później.</p>',
         );
       }
     } finally {
+      isLoading = false;
       grid.classList.remove("is-loading");
     }
   });
