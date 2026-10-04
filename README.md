@@ -3,6 +3,7 @@
 1. Secure Custom Fields
 2. Contact Form 7
 3. Safe SVG
+4. Easy Table of Contents
 
 # Config after plugins installation
 
