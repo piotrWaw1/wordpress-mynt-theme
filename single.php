@@ -1,91 +1,88 @@
 <?php get_header(); ?>
 <?php get_template_part( 'template-parts/site-nav' ); ?>
 
-<main>
+<main >
     <section>
-        <div class="wrap">
+        <div class="post-wrap ">
+                <?php while ( have_posts() ) : the_post(); ?>
+                    <article <?php post_class('single-post singpe-post-main'); ?>>
+                        <div class="post-header-container">
+                            <a href="<?php echo esc_url( get_permalink( get_option('page_for_posts') ) ); ?>" class="back-to-blog">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left preview-icon"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg> 
+                                Wróć do spisu treści
+                            </a>
+                            <div class="single-post-header">
 
-            <a href="<?php echo esc_url( get_permalink( get_option('page_for_posts') ) ); ?>" class="back-to-blog">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left preview-icon"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg> 
-                Wróć do spisu treści
-            </a>
+                                <h1 class="single-post-title"><?php the_title(); ?></h1>
 
-            <?php while ( have_posts() ) : the_post(); ?>
-                <article <?php post_class('single-post'); ?>>
-
-                    <div class="single-post-header">
-
-                        <h1 class="single-post-title"><?php the_title(); ?></h1>
-
-                        <?php
-                        if ( function_exists('get_field') ) {
-                            $subtitle = get_field('subtitle');
-                            if ( $subtitle ) {
-                                echo '<p class="single-post-subtitle">' . esc_html( $subtitle ) . '</p>';
-                            }
-                        }
-                        ?>
-                        <div class="single-post-meta">
-                            <time datetime="<?php echo get_the_date('c'); ?>">
-                                <?php echo get_the_date(); ?>
-                            </time>
+                                <?php
+                                if ( function_exists('get_field') ) {
+                                    $subtitle = get_field('subtitle');
+                                    if ( $subtitle ) {
+                                        echo '<p class="single-post-subtitle">' . esc_html( $subtitle ) . '</p>';
+                                    }
+                                }
+                                ?>
+                                <div class="single-post-meta">
+                                    <time datetime="<?php echo get_the_date('c'); ?>">
+                                        <?php echo get_the_date(); ?>
+                                    </time>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <?php if ( has_post_thumbnail() ) : ?>
-                        <div class="single-post-thumb">
-                            <?php the_post_thumbnail( 'small' ); ?>
+                        <div class="toc">
+                            <?php if ( has_post_thumbnail() ) : ?>
+                                <div class="single-post-thumb">
+                                    <?php the_post_thumbnail( 'small' ); ?>
+                                </div>
+                            <?php endif; ?>
+                            <?php echo do_shortcode( "[ez-toc]" ); ?>
                         </div>
-                    <?php endif; ?>
 
-                    <div class="entry-content">
-                        <?php the_content(); ?>
-                    </div>
+                        <div class="entry-content">
+                            <?php the_content(); ?>
+                            <?php
+                                $tags = get_the_tags();
+                                if ( $tags ) : ?>
+                                    <div class="single-post-tags">
+                                        <?php foreach ( $tags as $tag ) : ?>
+                                            <a href="<?php echo esc_url( get_tag_link( $tag->term_id ) ); ?>" class="tag-pill">
+                                                #<?php echo esc_html( $tag->name ); ?>
+                                            </a>
+                                        <?php endforeach; ?>
+                                    </div>
+                            <?php endif; ?>
+                            <nav class="single-post-nav">
+                                <?php
+                                $prev_post = get_previous_post();
+                                $next_post = get_next_post();
+                                ?>
+                                <?php if ( ! empty( $prev_post ) ) : ?>
+                                    <a href="<?php echo esc_url( get_permalink( $prev_post ) ); ?>" class="post-nav-link post-nav-prev">
+                                        <span class="post-nav-label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left preview-icon"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+                                            Poprzedni
+                                        </span>
+                                        <span class="post-nav-title"><?php echo esc_html( get_the_title( $prev_post ) ); ?></span>
+                                    </a>
+                                <?php else : ?>
+                                    <span></span>
+                                <?php endif; ?>
 
-                    <?php
-                    $tags = get_the_tags();
-                    if ( $tags ) : ?>
-                        <div class="single-post-tags">
-                            <?php foreach ( $tags as $tag ) : ?>
-                                <a href="<?php echo esc_url( get_tag_link( $tag->term_id ) ); ?>" class="tag-pill">
-                                    #<?php echo esc_html( $tag->name ); ?>
-                                </a>
-                            <?php endforeach; ?>
+                                <?php if ( ! empty( $next_post ) ) : ?>
+                                    <a href="<?php echo esc_url( get_permalink( $next_post ) ); ?>" class="post-nav-link post-nav-next">
+                                        <span class="post-nav-label">
+                                            Następny
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right preview-icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                        </span>
+                                        <span class="post-nav-title"><?php echo esc_html( get_the_title( $next_post ) ); ?></span>
+                                    </a>
+                                <?php endif; ?>
+                            </nav>
                         </div>
-                    <?php endif; ?>
-
-                </article>
-
-                <nav class="single-post-nav">
-                    <?php
-                    $prev_post = get_previous_post();
-                    $next_post = get_next_post();
-                    ?>
-                    <?php if ( ! empty( $prev_post ) ) : ?>
-                        <a href="<?php echo esc_url( get_permalink( $prev_post ) ); ?>" class="post-nav-link post-nav-prev">
-                            <span class="post-nav-label">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left preview-icon"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
-                                Poprzedni
-                            </span>
-                            <span class="post-nav-title"><?php echo esc_html( get_the_title( $prev_post ) ); ?></span>
-                        </a>
-                    <?php else : ?>
-                        <span></span>
-                    <?php endif; ?>
-
-                    <?php if ( ! empty( $next_post ) ) : ?>
-                        <a href="<?php echo esc_url( get_permalink( $next_post ) ); ?>" class="post-nav-link post-nav-next">
-                            <span class="post-nav-label">
-                                Następny
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right preview-icon"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                            </span>
-                            <span class="post-nav-title"><?php echo esc_html( get_the_title( $next_post ) ); ?></span>
-                        </a>
-                    <?php endif; ?>
-                </nav>
-
-            <?php endwhile; ?>
-
+                    </article>
+                <?php endwhile; ?>
         </div>
     </section>
 </main>
