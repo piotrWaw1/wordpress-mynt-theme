@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let page = 1;
   let activeFilter = "all";
 
-  if (!filters || !grid || !innerGrid) return;
+  if (!filters || !grid) return;
 
   let controller = null; // lets us cancel a request if the user clicks quickly
 
@@ -52,16 +52,15 @@ document.addEventListener("DOMContentLoaded", () => {
           ${result.data.feature_post_html}
           <div class="blog-grid" id="innerGrid">${result.data.posts_html}</div>
         `;
-        if (page >= result.data.max_pages) {
-          loadMoreBtn.classList.add("hidden");
-        } else {
-          loadMoreBtn.classList.remove("hidden");
+        if (loadMoreBtn) {
+          loadMoreBtn.classList.toggle("hidden", page >= result.data.max_pages);
         }
       }
     } catch (err) {
+      console.log(err);
       if (err.name !== "AbortError") {
         grid.innerHTML =
-          '<p class="no-posts">Coś poszło nietak. Spróbuj ponownie później.</p>';
+          '<p class="no-posts">Coś poszło nie tak. Spróbuj ponownie później.</p>';
       }
     } finally {
       grid.classList.remove("is-loading");
