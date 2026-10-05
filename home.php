@@ -69,7 +69,7 @@ $max_pages = $grid_query->max_num_pages;
             <?php endwhile; ?>
           </div>
         </div>
-        <?php if ($max_pages !== 1) : ?>
+        <?php if ($max_pages > 1) : ?>
           <div class="load-more">
             <button class="btn btn-ghost" id="loadMoreBtn">
               Załaduj więcej wpisów
